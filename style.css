@@ -1,0 +1,204 @@
+@font-face {
+  font-family: "product sanse";
+  src: url("Fonts/Product-Sans-Regular.ttf");
+}
+@font-face {
+  font-family: "product sanse bold";
+  src: url("Fonts/Product Sans Bold.ttf");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+  height: 100%;
+  font-family: "product sanse";
+}
+#main {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(90deg, #f49708, #de8e15, #f34607);
+  nav {
+    z-index: 99;
+    width: 100%;
+    padding: 1rem 2rem;
+    position: fixed;
+    a {
+      font-size: 30px;
+      text-decoration: none;
+    }
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    ul {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      list-style: none;
+      gap: 3vw;
+      font-size: 28px;
+    }
+    .navbar {
+      font-size: 40px;
+    }
+  }
+
+  .one {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    #fanta {
+        position: absolute;
+      width: 38%;
+     z-index: 2;
+    }
+    #orange-cut {
+      position: absolute;
+      top: 10%;
+      left: 37%;
+      width:14%;
+      z-index: 1;
+    }
+    #orange {
+      position: absolute;
+      bottom: 7%;
+      right: 35%;
+      width: 17%;
+      z-index: 3;
+    }
+    h1{
+        position: absolute;
+        font-size: 24vw;
+    }
+    #leaf{
+        position: absolute;
+        width: 17%;
+        left: 0%;
+        top: 20%;
+        transform: rotate(60deg);
+
+
+    }
+    #leaf2{
+        position: absolute;
+        width: 12%;
+        top: 60%;
+        left: 50%;
+        transform: rotate(-90deg);
+    }
+    #leaf3{
+        position: absolute;
+        top: 10%;
+        right: 0%;
+    }
+  }
+  .two{
+    padding:1rem 2rem;
+    width: 100%;
+    height: 100vh;
+    background-color: #ECCA9C;
+    display: flex;
+    .lft-two{
+        width: 50%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+         svg{
+             width: 60%;
+             /* margin-top: 40vh; */
+             transform: translateY(30%) rotate(80deg);
+         }
+        
+    }
+    .rgt-two{
+        width: 50%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        justify-content: center;
+        gap: 2vw;
+
+        h1{
+            font-size: 5vw;
+            color: #f34607;
+        }
+        p{
+            font-size: 1vw;
+            width: 70%;
+        };
+      
+    }
+  }
+  .three{
+    padding: 20vw 2vw 10vw 2vw;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5vw;
+    background: linear-gradient(90deg, #f49708, #de8e15, #f34607);
+    .card{
+        position: relative;
+        width: 24vw;
+        height: 67vh;
+        background-color: aliceblue;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        align-items: center;
+        gap: 1vw;
+        padding-bottom: 2vw;
+        h1{
+            text-align: center;
+            font-size: 3vw;
+            color: #000000;
+        }
+        button{
+            padding: 1vw 2vw;
+            border-radius: 50px;
+            border: none;
+            background-color: #f08e17;
+            color: #fff;
+            font-size: 1vw;
+        }
+        #cocacola{
+            position: absolute;
+            width: 60%;
+            top: -17%;
+        }
+        #pepsi{
+            position: absolute;
+            width: 85%;
+            top: -17%;
+        }
+        .orange_cut{
+            position: absolute;
+            width: 100%;
+            top: -50%;
+      }
+    }
+   
+}
+
+}
+/* #orange-cut{
+    animation: cut 4s linear infinite;
+}
+
+@keyframes cut {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+} */
